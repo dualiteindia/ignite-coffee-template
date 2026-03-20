@@ -1,24 +1,29 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const features = [
   {
     video:
-      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/From-KlickPin-CF-gym-fitness-workout-aesthetic-health-Dm-for-credit-_-Tatuaggi-maschili-Allenamento-Celebrit-1.webm",
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/From-KlickPin-CF-gym-fitness-workout-aesthetic-health-Dm-for-credit-_-Tatuaggi-maschili-Allenamento-Celebrit-1.webm",
     title: "FOR MORNINGS OR PRE-WORKOUT",
     text: "Clean energy coffee to start your day strong, move better, and feel steady.",
+    poster:
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/running.webp",
   },
   {
     video:
-      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/From-KlickPin-CF-Steph-on-Instagram-Budgeting-level-Expert-Step-1-Open-laptop-Step-2-Sip-iced-coffee-Step-3-Pretend-to-be-organized-while-my-cat-judges-me-from-acr-Video-Video-_-Comp.webm",
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/From-KlickPin-CF-Steph-on-Instagram-Budgeting-level-Expert-Step-1-Open-laptop-Step-2-Sip-iced-coffee-Step-3-Pretend-to-be-organized-while-my-cat-judges-me-from-acr-Video-Video-_-Comp.webm",
     title: "FOR DEEP WORK & FOCUS",
     text: "Sustained energy for productivity and creativity. No jitters, no crash.",
+    poster:
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/laptop.webp",
   },
   {
     video:
-      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/From-KlickPin-CF-Creamed-ice-Coffee-mix-Video-_-Coffee-shop-photography-How-to-make-coffee-Coffee-shop-1.webm",
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/From-KlickPin-CF-Creamed-ice-Coffee-mix-Video-_-Coffee-shop-photography-How-to-make-coffee-Coffee-shop-1.webm",
     title: "INDULGENCE WITHOUT THE GUILT",
     text: "Great taste with protein and low sugar. Your favorite iced-coffee taste upgraded.",
+    poster:
+      "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/coffee.webp",
   },
 ];
 
@@ -70,6 +75,9 @@ export const Features = () => {
                   loop
                   muted
                   playsInline
+                  preload="auto"
+                  {...{ fetchPriority: "high" }}
+                  poster={feature.poster}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>

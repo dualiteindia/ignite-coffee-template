@@ -122,4 +122,3 @@ export const Hero = () => {
     </div>
   );
 };
-

@@ -245,4 +245,3 @@ export const ProductShowcase = () => {
     </section>
   );
 };
-

@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 const ingredients = [
   {
     id: 1,
-    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/Arabica.webp",
+    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/Arabica.webp",
     alt: "Arabica Coffee Ingredient",
   },
   {
     id: 2,
-    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/Whey.webp",
+    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/Whey.webp",
     alt: "Protein Blend Ingredient",
   },
   {
     id: 3,
-    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/L-theanine_be41c2d9-9595-414b-b6d5-1a619912a7b8.webp",
+    src: "https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/L-theanine_be41c2d9-9595-414b-b6d5-1a619912a7b8.webp",
     alt: "L-Theanine Ingredient",
   },
 ];

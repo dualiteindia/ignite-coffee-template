@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export const CTABanner = () => {
   const navigate = useNavigate();
@@ -8,20 +8,24 @@ export const CTABanner = () => {
   return (
     <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-black">
       {/* Parallax Background */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-70"
-        style={{ 
-          backgroundImage: 'url(https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/jenny_hu/ChatGPT-Image-Mar-7-2026-01_57_48-PM.webp)',
+        style={{
+          backgroundImage:
+            "url(https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/ignite-coffee/ChatGPT-Image-Mar-7-2026-01_57_48-PM.webp)",
         }}
       />
-      
+
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Marquee Headline */}
       <div className="relative z-10 w-full overflow-hidden whitespace-nowrap mb-6">
         <div className="inline-block animate-marquee w-max">
           {[...Array(4)].map((_, i) => (
-            <span key={i} className="text-white font-heading font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter uppercase mx-4 opacity-90">
+            <span
+              key={i}
+              className="text-white font-heading font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter uppercase mx-4 opacity-90"
+            >
               THE FUTURE OF COFFEE IS HERE
             </span>
           ))}
@@ -30,7 +34,7 @@ export const CTABanner = () => {
 
       {/* Centered Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 mt-4">
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -39,9 +43,9 @@ export const CTABanner = () => {
         >
           High performance coffee for focus, energy, and momentum
         </motion.p>
-        
+
         <motion.button
-          onClick={() => navigate('/shop')}
+          onClick={() => navigate("/shop")}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,3 +58,4 @@ export const CTABanner = () => {
     </section>
   );
 };
+
